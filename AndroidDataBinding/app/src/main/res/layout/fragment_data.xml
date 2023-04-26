@@ -1,0 +1,20 @@
+<layout>
+    <data>
+        <variable
+            name="dataSource"
+            type="com.example.androiddatabinding.DataSource"/>
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.androiddatabinding.DataFragment">
+
+        <TextView
+            android:id="@+id/fragment_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{dataSource.message}" />
+
+    </FrameLayout>
+</layout>
